@@ -1,11 +1,3 @@
-using UnityEngine;
-using UnityEngine.UI;
-
-public class LoadingScreen : MonoBehaviour
-{
-    public Slider progressBar;
-    public Text loadingText;
-
     private float loadingProgress = 0f;
 
     void Start()
@@ -26,4 +18,3 @@ public class LoadingScreen : MonoBehaviour
         // Load complete, transition to game scene
         UnityEngine.SceneManagement.SceneManager.LoadScene("GameScene");
     }
-}
